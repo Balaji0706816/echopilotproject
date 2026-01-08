@@ -7,7 +7,7 @@ export default function FAQ() {
   // 1. DATA FROM THE IMAGE
   const faqs = [
     {
-      question: "Why real-time vs. a regular AI notetaker?",
+      question: "Why me vs. a regular AI notetaker?",
       answer: "Unlike regular AI notetakers like Otter or Granola that work after your meeting ends, Cluely provides real-time meeting intelligence during your calls. While other AI meeting assistants create meeting summaries afterward, Cluely helps you answer technical questions, handle objections, and perform better during high-stakes conversations."
     },
     {
