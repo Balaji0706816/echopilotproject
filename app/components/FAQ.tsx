@@ -39,36 +39,36 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-white py-24  font-sans">
+    <section className="bg-white py-20 px-8  font-sans dark:bg-black ">
       <div className="max-w-7xl mx-auto">
         
         {/* Header */}
-        <h2 className="text-4xl font-semibold text-gray-900 mb-12 tracking-tight">
+        <h2 className="text-4xl font-semibold text-gray-900 mb-12 tracking-tight dark:text-white">
           Frequently asked questions
         </h2>
 
         {/* List */}
-        <div className="border-t border-gray-100">
+        <div className="border-t border-gray-100 dark:border-white/10 ">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (
               <div 
                 key={index} 
-                className="border-b border-gray-100"
+                className="border-b border-gray-100 dark:border-white/10 "
               >
                 {/* Question Row (Clickable) */}
                 <button 
                   onClick={() => toggleFAQ(index)}
-                  className="w-full py-5 flex items-center cursor-pointer justify-between text-left focus:outline-none group"
+                  className="w-full py-5 dark:text-white flex items-center cursor-pointer justify-between text-left focus:outline-none group"
                 >
-                  <span className="text-lg font-medium text-gray-900 pr-8">
+                  <span className="text-lg font-medium text-gray-900 pr-8 dark:text-white">
                     {faq.question}
                   </span>
                   
                   {/* Chevron Icon with Rotation */}
                   <ChevronDown 
-                    className={`text-gray-400 transition-transform duration-300 ease-in-out flex-shrink-0 ${isOpen ? 'rotate-180' : 'rotate-0'}`} 
+                    className={`text-gray-400 dark:text-white transition-transform duration-300 ease-in-out flex-shrink-0 ${isOpen ? 'rotate-180' : 'rotate-0'}`} 
                     size={20} 
                   />
                 </button>
@@ -78,7 +78,7 @@ export default function FAQ() {
                   className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100 mb-6' : 'grid-rows-[0fr] opacity-0 mb-0'}`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-gray-500 leading-relaxed text-[15px]">
+                    <p className="text-gray-500 leading-relaxed text-[15px] dark:text-white">
                       {faq.answer}
                     </p>
                   </div>
