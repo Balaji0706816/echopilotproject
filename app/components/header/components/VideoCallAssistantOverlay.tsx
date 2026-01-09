@@ -57,10 +57,10 @@ export default function VideoCallAssistantOverlay() {
           </div>
 
           {/* Video Grid */}
-          <div className="grid grid-cols-2 gap-4 p-8  ">
-            <div className="flex items-center justify-center text-neutral-400 px-1">
+          <div className="grid grid-cols-2 gap-2 p-2 md:p-8 py-8 md:py-8  ">
+            <div className="flex items-center justify-center text-neutral-400 ">
               <video
-                className="w-full  h-90 md:h-100 rounded-lg object-cover object-top"
+                className="w-full  h-50 md:h-100 rounded-lg object-cover object-top"
                 autoPlay
                 loop
                 muted
@@ -71,7 +71,7 @@ export default function VideoCallAssistantOverlay() {
             </div>
             <div className="flex items-center justify-center text-neutral-300">
               <video
-                className="w-full  h-90 md:h-100  rounded-lg object-cover"
+                className="w-full  h-50 md:h-100  rounded-lg object-cover"
                 autoPlay
                 loop
                 muted
