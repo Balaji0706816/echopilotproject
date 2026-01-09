@@ -8,7 +8,7 @@ export default function Home() {
     <div className=" bg-zinc-50 font-sans dark:bg-black">
       <Navbar />
       <Header />
-      <main className="flex min-h-screen w-full max-w-full flex-col items-center justify-between  px-8 bg-white dark:bg-black ">
+      <main className="flex min-h-screen w-full max-w-full flex-col items-center justify-between  bg-white dark:bg-black ">
    
       <FAQ />
       </main>

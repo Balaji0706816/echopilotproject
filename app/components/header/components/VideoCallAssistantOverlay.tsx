@@ -57,10 +57,10 @@ export default function VideoCallAssistantOverlay() {
           </div>
 
           {/* Video Grid */}
-          <div className="grid grid-cols-2 gap-4 p-8 h-[490px]">
-            <div className="flex items-center justify-center text-neutral-400">
+          <div className="grid grid-cols-2 gap-4 p-8  ">
+            <div className="flex items-center justify-center text-neutral-400 px-1">
               <video
-                className="w-full h-full rounded-lg object-cover object-top"
+                className="w-full  h-90 md:h-100 rounded-lg object-cover object-top"
                 autoPlay
                 loop
                 muted
@@ -71,7 +71,7 @@ export default function VideoCallAssistantOverlay() {
             </div>
             <div className="flex items-center justify-center text-neutral-300">
               <video
-                className="w-full h-full rounded-lg object-cover"
+                className="w-full  h-90 md:h-100  rounded-lg object-cover"
                 autoPlay
                 loop
                 muted
@@ -91,43 +91,7 @@ export default function VideoCallAssistantOverlay() {
             <button className="rounded-md bg-red-600 px-3 py-1 text-white">End</button>
           </div>
 
-          {/* Assistant Overlay (Commented placeholder for future) */}
-          {/*
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="pointer-events-auto max-w-xl rounded-2xl bg-black/70 backdrop-blur-xl p-6 text-white shadow-xl">
-              
-              <div className="flex justify-end mb-4">
-                <span className="bg-blue-600 px-4 py-2 rounded-full text-sm shadow">
-                  What should I say?
-                </span>
-              </div>
-
-              <p className="mb-4 text-sm leading-relaxed text-neutral-100">
-                “A discounted cash flow model values a company by projecting future
-                free cash flows and discounting them to present value using WACC.”
-              </p>
-
-              <div className="flex items-center gap-6 text-xs text-neutral-300">
-                <button className="flex items-center gap-1 hover:text-white">
-                  <HelpCircle size={14} /> What should I say?
-                </button>
-                <button className="flex items-center gap-1 hover:text-white">
-                  <MessageCircle size={14} /> Follow-up questions
-                </button>
-              </div>
-
-              <div className="mt-4">
-                <input
-                  type="text"
-                  placeholder="Ask anything about the screen or conversation"
-                  className="w-full rounded-lg bg-neutral-900/80 px-4 py-2 text-sm text-white placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-            </div>
-          </div>
-          */}
-
+        
         </div>
       </div>
     </div>
